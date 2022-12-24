@@ -23,7 +23,7 @@ const AddTAsk = ({ tasks, setTasks }) => {
       {
         method: "POST",
         headers: {
-          "content-type": "application/json",
+          "Content-type": "application/json",
         },
         body: JSON.stringify({ text }),
       }
