@@ -22,9 +22,7 @@ const App = () => {
   //fetching data
   const fetchingData = async () => {
     try {
-      const res = await fetch(
-        "https://aluminum-delicate-snowshoe.glitch.me/tasks"
-      );
+      const res = await fetch("https://disco-seemly-walker.glitch.me/tasks");
       if (!res.ok) throw new Error("something went wrong!");
       const data = await res.json();
       setTasks(data);
@@ -97,7 +95,7 @@ const App = () => {
   };
 
   return (
-    <div className="Wrapper bg-teal-900 bg-gradient-to-t from-gray-900 to-teal-900 min-h-screen text-xl text-gray-100 flex flex-col py-10">
+    <div className='Wrapper bg-teal-900 bg-gradient-to-t from-gray-900 to-teal-900 min-h-screen text-xl text-gray-100 flex flex-col py-10'>
       <deleteHandlerContext.Provider value={handleDelete}>
         <editHandlerContext.Provider value={handleEdit}>
           <Header />
