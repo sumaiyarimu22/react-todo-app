@@ -41,7 +41,7 @@ const App = () => {
   };
 
   const deleteData = async (id) => {
-    await fetch(`https://aluminum-delicate-snowshoe.glitch.me/tasks/${id}`, {
+    await fetch(`https://disco-seemly-walker.glitch.me/tasks/${id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json()",
@@ -85,7 +85,7 @@ const App = () => {
   };
 
   const puttingRequest = async (id, newData) => {
-    fetch(`https://aluminum-delicate-snowshoe.glitch.me/tasks/${id}`, {
+    fetch(`https://disco-seemly-walker.glitch.me/tasks/${id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
